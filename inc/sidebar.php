@@ -14,13 +14,13 @@
     <div class="l-lastNews">
       <ul class="b-lastNews">
         <li class="b-lastNews__item">
-          <a class="b-lastNews__thumbLink" href="single.html">
+          <a class="b-lastNews__thumbLink" href="#">
             <img class="b-lastNews__thumb" src="assets/img/userfiles/lastNews_1-ill.jpg" alt="ideus_team at WebCampOdessa" />
           </a>
 
           <div class="b-lastNews__content">
             <h3 class="b-lastNews__name">
-              <a class="b-lastNews__nameLink" href="single.html">Конференция #WebCamp 2015 в Одессе</a>
+              <a class="b-lastNews__nameLink" href="#">Конференция #WebCamp 2015 в Одессе</a>
             </h3>
             <div class="b-lastNews__date">8 июля 2015</div>
             <div class="b-lastNews__descr b-text">
@@ -30,13 +30,13 @@
         </li>
 
         <li class="b-lastNews__item">
-          <a class="b-lastNews__thumbLink" href="single.html">
+          <a class="b-lastNews__thumbLink" href="#">
             <img class="b-lastNews__thumb" src="assets/img/userfiles/lastNews_2-ill.png" alt="Запуск интерактивной библиотеки для детей под iOS «Візок казок»" />
           </a>
 
           <div class="b-lastNews__content">
             <h3 class="b-lastNews__name">
-              <a class="b-lastNews__nameLink" href="single.html">Запуск интерактивной библиотеки для детей под iOS «Візок казок»</a>
+              <a class="b-lastNews__nameLink" href="#">Запуск интерактивной библиотеки для детей под iOS «Візок казок»</a>
             </h3>
             <div class="b-lastNews__date">19 июня 2015</div>
             <div class="b-lastNews__descr b-text">
