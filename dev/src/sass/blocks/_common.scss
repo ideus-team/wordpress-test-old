@@ -27,7 +27,7 @@ body {
   position: relative;
   margin: 0 auto;
   padding: 25px 0 65px;
-  width: $siteWidth;
+  width: $site-width;
 
   .-device_mobile & {
     width: $siteMobileWidth;

@@ -26,13 +26,15 @@ module.exports = function(grunt) {
       gruntPluginsSettings: [
         '<%= csslint.options.csslintrc %>',
         '<%= jshint.options.jshintrc %>',
+        '<%= jscs.options.config %>',
       ],
 
       // Compile:
         // Source:
           // CSS
-          sourceCSSDir   : 'src/sass',
-          sourceCSSFiles : '<%= sourceCSSDir %>' + '/**/*.scss',
+          sourceCSSDir    : 'src/sass',
+          sourceCSSFiles  : '<%= sourceCSSDir %>' + '/**/*.scss',
+          sourceCSSBase64 : '<%= sourceCSSDir %>' + '/_base64.scss',
 
           // JS
           sourceJSPlugins : [
@@ -49,14 +51,21 @@ module.exports = function(grunt) {
           ],
 
           // IMG
-          sourceIMGDir        : 'src/img',
-          sourceIMGFiles      : '<%= sourceIMGDir %>' + '/**/*.{png,jpg,gif}',
+          sourceIMGDir      : 'src/img',
+          sourceIMGFiles    : '<%= sourceIMGDir %>' + '/**/*.{png,jpg,gif,svg}',
+          sourceBase64Files : '<%= sourceIMGDir %>' + '/base64/*.{png,jpg,gif,svg}',
+
+        // Temp
+          tempDir       : '.temp',
+          tempJS        : '<%= tempDir %>' + '/js/main.js',
 
         // Destination:
           // CSS
-          destCSSDir : '../assets/css', // generated css-files names taked from scss files in %sourceCSSDir
-          destCSSExt : '.min.css',
-          destCSS    : '<%= destCSSDir %>' + '/main' + '<%= destCSSExt %>',
+          destCSSDir    : '../assets/css', // generated css-files names taked from scss files in %sourceCSSDir
+          destCSSExt    : '.css',
+          destMinCSSExt : '.min.css',
+          destCSS       : '<%= destCSSDir %>' + '/main' + '<%= destCSSExt %>',
+          destMinCSS    : '<%= destCSSDir %>' + '/main' + '<%= destMinCSSExt %>',
 
           // JS
           destJSDir  : '../assets/js',

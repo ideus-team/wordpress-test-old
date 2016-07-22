@@ -1,11 +1,22 @@
 @echo off
 
+echo Update environment...
+
+echo Update Ruby...
+call gem update --system
+
+echo Update Ruby Sass...
+call gem update sass
+
+echo Update Ruby Compass...
+call gem update compass
+
 echo Update Grunt...
 call npm update grunt-cli -g
 
 echo Update project packages versions...
 call npm install -g npm-check-updates
-call ncu -u
+call ncu --upgradeAll
 
 echo Install project packages ...
 call npm install --save-dev

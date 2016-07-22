@@ -3,10 +3,10 @@ module.exports = {
     separator: ';',
   },
 
-  dist: {
+  main: {
     src: [
       '<%= sourceJSFiles %>',
     ],
-    dest: '<%= destJS %>',
+    dest: '<%= tempJS %>',
   },
 };

@@ -10,7 +10,7 @@
 .b-siteSubHeader {
   @extend .g-clearfix;
   margin: 0 auto;
-  width: $siteWidth;
+  width: $site-width;
   height: $subHeaderHeight;
 
   .-device_mobile & {

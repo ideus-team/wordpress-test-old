@@ -11,12 +11,18 @@ prod:
     - postprocess
     - merge
 
+base64:
+  description: 'Base64 task'
+  tasks:
+    - 'datauri'
 
 preprocess:
   description: 'All Preprocess tasks'
   tasks:
-    - 'sass'
+    - 'base64'
+    - 'compass'
     - 'jshint'
+    - 'jscs'
 
 postprocess:
   description: 'All Postprocess tasks'
@@ -29,6 +35,7 @@ merge:
   description: 'All Merge tasks'
   tasks:
     - 'concat'
+    - 'babel'
     - 'uglify'
 
 
@@ -37,7 +44,7 @@ merge:
 css:
   description: 'CSS Tasks'
   tasks:
-    - 'sass'
+    - 'compass'
     - 'csslint'
     - 'postcss'
 
@@ -45,10 +52,13 @@ js:
   description: 'JS Tasks'
   tasks:
     - 'jshint'
+    - 'jscs'
     - 'concat'
+    - 'babel'
     - 'uglify'
 
 img:
   description: 'Image tasks'
   tasks:
+    - 'base64'
     - 'imagemin'
