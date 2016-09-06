@@ -32,6 +32,6 @@ npm install --save-dev
 ##6. Run
 Start Grunt with `dev\start.cmd` or execute in shell:
 ```shell
-grunt prod
+grunt
 grunt watch
 ```
