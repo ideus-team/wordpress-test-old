@@ -23,17 +23,13 @@ Run cmd as administrator and execute:
 npm install grunt-cli -g
 ```
 
-##5. Get Framework
-Git Clone:
-- URL: https://github.com/ideus-team/html-framework.git
-
-##6. Install
+##5. Install
 Once run `dev\install.cmd` or execute in shell:
 ```shell
 npm install --save-dev
 ```
 
-##7. Run
+##6. Run
 Start Grunt with `dev\start.cmd` or execute in shell:
 ```shell
 grunt prod
