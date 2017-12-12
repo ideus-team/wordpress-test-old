@@ -7,44 +7,22 @@ prod:
   description: 'Production build'
   tasks:
     - clean
-    - preprocess
-    - postprocess
-    - merge
+    - css
+    - js
+    - img
 
-base64:
-  description: 'Base64 task'
+dev:
+  description: 'Development build'
   tasks:
-    - 'datauri'
-
-preprocess:
-  description: 'All Preprocess tasks'
-  tasks:
-    - 'base64'
-    - 'compass'
-    - 'jshint'
-    - 'jscs'
-
-postprocess:
-  description: 'All Postprocess tasks'
-  tasks:
-    - 'csslint'
-    - 'postcss'
-    - 'imagemin'
-
-merge:
-  description: 'All Merge tasks'
-  tasks:
-    - 'concat'
-    - 'babel'
-    - 'uglify'
-
-
-
+    - clean
+    - css
+    - devjs
+    - devimg
 
 css:
   description: 'CSS Tasks'
   tasks:
-    - 'compass'
+    - 'sass'
     - 'csslint'
     - 'postcss'
 
@@ -57,8 +35,24 @@ js:
     - 'babel'
     - 'uglify'
 
+devjs:
+  description: 'Development JS Tasks'
+  tasks:
+    - 'jshint'
+    - 'jscs'
+    - 'concat'
+    - 'babel'
+
 img:
   description: 'Image tasks'
   tasks:
-    - 'base64'
+    - 'sprite'
+    - 'datauri'
     - 'imagemin'
+
+devimg:
+  description: 'Image tasks'
+  tasks:
+    - 'sprite'
+    - 'datauri'
+    - 'copy'

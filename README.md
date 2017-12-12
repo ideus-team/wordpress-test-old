@@ -2,43 +2,84 @@
 
 1. Ставим Wordpress и на основе этой вёрстки создаём новую тему для него.
 2. Обязательно необходимо дать админу возможность редактировать всё, что отмечено зелёным цветом на скриншоте http://view.xscreenshot.com/522b3ec2c910d1b5495e3396fcebb2c3 , в случае ссылок на аккаунты в соцсетях достаточно дать возможность отредактировать только ссылку.
-3. Последние новости (отмечены синим цветом) не являются последними постами блога. Они отображаются только в сайдбаре, также необходимо, чтобы ссылки с них вели не на внутренние страницы, а на сторонние ресурсы (было бы неплохо использовать кастомные типы записей).
+3. Последние новости (отмечены синим цветом) не являются последними постами блога. Они отображаются только в сайдбаре, также необходимо, чтобы ссылки с них вели не на внутренние страницы, а на сторонние ресурсы (тут было бы неплохо использовать кастомные типы записей).
 4. Готовый результат должен быть в виде архива с Wordpress (или ссылка на репозиторий на Github), **также необходим файл с дампом БД**.
 
 ## How to install and run HTML Framework
 Our HTML Framework based on H5BP+Grunt+SASS.
+* [How to install and run](#how-to-install-and-run)
+* [Use CSS-sprites](#use-css-sprites)
 
+## How to install and run
 Instalation procedure is similar for Win/Mac/Linux.
 
-### 1. Install [Ruby](http://rubyinstaller.org/downloads/)
-Ruby __2.3.X__ x64 installer (needed for SASS (grunt-contrib-sass).
- - Select __„Add Ruby executables to your PATH“__.
+### 1. Install [Node.js](https://nodejs.org/en/download/current/)
+LTS (Recommended For Most Users), Windows Installer 64-bit (needed for Grunt).
 
-### 2. Install SASS+Compass
-```
-gem install sass
-gem install compass
-```
-If you get SSL error — foolow [this steps](https://gist.github.com/luislavena/f064211759ee0f806c88#manual-solution-to-ssl-issue).
-
-### 3. Install [Node.js](https://nodejs.org/en/download/current/)
-Current (latest features), Windows Installer 64-bit (needed for Grunt).
-
-### 4. Install Grunt
+### 2. Install Grunt
 Run cmd as administrator and execute:
-```
+
+```shell
 npm install grunt-cli -g
 ```
 
-### 5. Install
-Once run `dev\install.cmd` or execute in shell:
+### 3. Get Framework
+Git Clone:
+- URL: https://github.com/ideus-team/html-framework.git
+
+### 4. Install
+Once run `dev\_install.cmd` or execute in shell:
+
 ```shell
 npm install --save-dev
 ```
 
-### 6. Run
-Start Grunt with `dev\start.cmd` or execute in shell:
+### 5. Run
+#### Dev
+Start Grunt with `dev\_dev.cmd` or execute in shell:
+
+```shell
+grunt dev
+grunt concurrent:dev
+```
+
+#### Prod
+Start Grunt with `dev\_start.cmd` or execute in shell:
+
 ```shell
 grunt
-grunt watch
+grunt concurrent:main
+```
+
+## Use CSS-sprites
+
+Put PNG images (e.g. `file1.png` & `file2.png`) into `dev\src\img\sprites\` & use this example:
+
+```scss
+.b-icon {
+  &.-icon_file1 {
+    @include sprite($file1);
+  }
+  &.-icon_file2 {
+    @include sprite($file2);
+  }
+}
+```
+
+Generated code will look like this:
+
+```css
+.b-icon.-icon_file1 {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px 0px;
+  width: 28px;
+  height: 28px;
+}
+
+.b-icon.-icon_file2 {
+  background-image: url(../img/spritesheet.png);
+  background-position: -28px 0px;
+  width: 28px;
+  height: 28px;
+}
 ```

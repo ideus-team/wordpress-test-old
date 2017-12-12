@@ -10,12 +10,10 @@ module.exports = {
       require('autoprefixer')({
         // add vendor prefixes
         browsers: [
-          'last 3 version',
-          'ie 8',
-          'ff 3.6',
-          'opera 11.1',
-          'ios 4',
-          'android 2.3',
+          'last 5 version',
+          'ie >= 10',
+          'iOS 4',
+          'Android 2.3',
         ],
       }),
 
@@ -27,8 +25,12 @@ module.exports = {
   },
 
   main: {
-    files: {
-      '<%= destMinCSS %>' : '<%= destCSS %>',
-    },
+    files: [{
+      expand: true,
+      cwd: '<%= destCSSDir %>',
+      src: '*' + '<%= destCSSExt %>',
+      dest: '<%= destCSSDir %>',
+      ext: '<%= destMinCSSExt %>',
+    }],
   },
 };

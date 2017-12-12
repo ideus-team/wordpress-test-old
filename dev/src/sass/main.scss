@@ -3,17 +3,14 @@
 @import 'normalize';
 @import 'h5b';
 
-/* Import Compass */
-@import 'compass/css3/images';
-
 @import 'mixins';
 
 /* Project files… */
 @import 'fonts';
 @import 'settings';
-@import 'sprites';
 
 /* Generated… */
+@import 'sprites';
 @import 'base64';
 
 /* Plugins */
@@ -32,36 +29,33 @@
 @import 'blocks/common';
 @import 'blocks/b-text';
 
-@import 'blocks/l-siteHeader';
-@import 'blocks/l-siteLogo';
-@import 'blocks/l-siteInfo';
-@import 'blocks/l-siteSearch';
-@import 'blocks/l-siteSubHeader';
-@import 'blocks/l-siteNavigation';
+@import 'blocks/b-siteHeader';
+@import 'blocks/b-siteLogo';
+@import 'blocks/b-siteInfo';
+@import 'blocks/b-siteSearch';
+@import 'blocks/b-siteSubHeader';
+@import 'blocks/b-siteNavigation';
 
-@import 'blocks/l-post';
+@import 'blocks/b-post';
 @import 'blocks/b-readMore';
-@import 'blocks/l-share';
-@import 'blocks/l-comments';
-@import 'blocks/l-pagination';
+@import 'blocks/b-share';
+@import 'blocks/b-comments';
+@import 'blocks/b-pagination';
 
 
-@import 'blocks/l-sidebar';
-@import 'blocks/l-sidebarBlock';
-@import 'blocks/l-about';
-@import 'blocks/l-lastNews';
+@import 'blocks/b-sidebar';
+@import 'blocks/b-sidebarBlock';
+@import 'blocks/b-about';
+@import 'blocks/b-lastNews';
 
-@import 'blocks/l-socialMenu';
+@import 'blocks/b-socialMenu';
 
-@import 'blocks/l-siteFooter';
-@import 'blocks/l-siteCopyright';
+@import 'blocks/b-siteFooter';
+@import 'blocks/b-siteCopyright';
 
 
 /**
-* Responsive & Print styles
-*/
-@import 'responsive/device_desktop';
-@import 'responsive/device_tablet';
-@import 'responsive/device_mobile';
-@import 'responsive/media_queries';
+ * Print styles
+ */
 @import 'print';
+

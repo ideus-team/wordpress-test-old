@@ -7,7 +7,11 @@ module.exports = function(grunt) {
 
   require('time-grunt')(grunt);
   require('load-grunt-config')(grunt, {
-    jitGrunt: true,
+    jitGrunt: {
+      staticMappings: {
+        sprite: 'grunt-spritesmith',
+      },
+    },
 
     data: {
       // Data passed into config.  Can use with <%= test %>
@@ -62,10 +66,8 @@ module.exports = function(grunt) {
         // Destination:
           // CSS
           destCSSDir    : '../assets/css', // generated css-files names taked from scss files in %sourceCSSDir
-          destCSSExt    : '.css',
+          destCSSExt    : '.full.css',
           destMinCSSExt : '.min.css',
-          destCSS       : '<%= destCSSDir %>' + '/main' + '<%= destCSSExt %>',
-          destMinCSS    : '<%= destCSSDir %>' + '/main' + '<%= destMinCSSExt %>',
 
           // JS
           destJSDir  : '../assets/js',

@@ -1,8 +1,8 @@
 <?php
-  $pageName = 'Home';
-  $siteName = 'iDeus';
-  $uri = 'home';
-  require('inc/header.php');
+$pageName = 'Home';
+$siteName = 'iDeus';
+$uri = 'home';
+require('inc/header.php');
 ?>
 
 <main class="l-contentText" role="main">
@@ -11,7 +11,7 @@
       <a class="b-post__thumbLink" href="single.html">
         <img class="b-post__thumb" src="assets/img/userfiles/article_1-ill.jpg" alt="ideus_team at WebCampOdessa" />
       </a>
-      
+
       <h2 class="b-post__title">Конференция #WebCamp 2015 в Одессе</h2>
 
       <div class="b-post__content b-text">

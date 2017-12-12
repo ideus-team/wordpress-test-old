@@ -1,8 +1,8 @@
 <?php
-  $pageName = 'Конференция #WebCamp 2015 в Одессе';
-  $siteName = 'iDeus';
-  $uri = 'single';
-  require('inc/header.php');
+$pageName = 'Конференция #WebCamp 2015 в Одессе';
+$siteName = 'iDeus';
+$uri = 'single';
+require('inc/header.php');
 ?>
 
 <main class="l-contentText" role="main">
@@ -16,7 +16,7 @@
         <p>3-5 июля мы побывали на конференции WebCamp в Одессе и сами выступили там докладчиками, поделившись <a href="http://habrahabr.ru/post/261973/" target="_blank">своим опытом вёрстки «по-БЭМ»</a></p>
       </div>
 
-      
+
       <ul class="b-postMeta">
         <li class="b-postMeta__item -type_date">8 июля 2015</li>
         <li class="b-postMeta__item -type_author">Igor Zenich</li>
