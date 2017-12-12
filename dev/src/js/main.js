@@ -1,17 +1,14 @@
-/**
- *  Authors: Valery Bogdanov
-*/
+// Authors: Valery Bogdanov
+
 $(document).ready(function () {
   searchBox();
   fancyboxInit();
-
-  if ($('html').hasClass('-device_desktop')) {
-
-  }
 });
+
 $(window).resize(function () {
 
 });
+
 $(window).load(function () {
 
 });
