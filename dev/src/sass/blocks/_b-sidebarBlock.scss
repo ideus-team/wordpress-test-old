@@ -1,6 +1,6 @@
 /**
-* @section sidebarBlock
-*/
+ * @section sidebarBlock
+ */
 .b-sidebarBlock {
   position: relative;
   margin: 24px 0 0;
@@ -20,10 +20,11 @@
       width: 123px;
     }
 
-    .-device_mobile & {
+    .l-html.-device_mobile & {
       display: none;
     }
   }
+
   &.-style_social {
     &:before {
       width: 100%;

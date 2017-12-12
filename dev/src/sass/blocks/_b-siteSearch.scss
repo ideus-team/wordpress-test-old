@@ -1,12 +1,12 @@
 /**
-* @subsection siteSearch
-*/
+ * @section siteSearch
+ */
 .l-siteSearch {
   position: absolute;
   top: 40px;
   right: 0;
 
-  .-device_mobile & {
+  .l-html.-device_mobile & {
     right: 20px;
   }
 }
@@ -16,6 +16,7 @@
     font-size: 19px;
     line-height: 1em;
   }
+
   &__form {
     position: fixed;
     top: 0;
@@ -26,6 +27,7 @@
     display: none;
     background: #19262b;
   }
+
   &__close {
     position: absolute;
     top: 20px;
@@ -42,6 +44,7 @@
       opacity: 1;
     }
   }
+
   &__input {
     position: absolute;
     top: 50%;
@@ -59,6 +62,7 @@
     text-transform: uppercase;
     font: 50px $Roboto;
   }
+
   &__submit {
     display: none;
   }

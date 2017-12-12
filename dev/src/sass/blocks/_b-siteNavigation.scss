@@ -1,11 +1,11 @@
 /**
-* @subsection siteNavigation
-*/
+ * @section siteNavigation
+ */
 .l-siteNavigation {
   float: right;
   display: block;
 
-  .-device_mobile & {
+  .l-html.-device_mobile & {
     float: none;
     box-sizing: border-box;
     padding-right: 20px;
@@ -24,7 +24,7 @@
   text-transform: uppercase;
   font: 14px/#{$subHeaderHeight} $RobotoSlab;
 
-  .-device_mobile & {
+  .l-html.-device_mobile & {
    text-align: center;
   }
 
@@ -47,6 +47,7 @@
       display: block;
       color: inherit;
       text-decoration: none;
+
       &:hover {
         text-decoration: underline;
       }

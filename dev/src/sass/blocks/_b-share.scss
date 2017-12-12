@@ -1,6 +1,6 @@
 /**
-* @section share
-*/
+ * @section share
+ */
 .l-share {}
 .b-share {
   position: absolute;
@@ -12,6 +12,7 @@
     color: $colorPrimary;
     font: italic 14px/24px $Roboto;
   }
+
   &__content {
     display: inline-block;
   }

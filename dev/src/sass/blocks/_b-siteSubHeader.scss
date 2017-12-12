@@ -1,6 +1,6 @@
 /**
-* @subsection siteSubHeader
-*/
+ * @section siteSubHeader
+ */
 .l-siteSubHeader {
   position: absolute;
   bottom: 0;
@@ -13,7 +13,7 @@
   width: $site-width;
   height: $subHeaderHeight;
 
-  .-device_mobile & {
+  .l-html.-device_mobile & {
     width: 100%;
     height: auto;
   }
@@ -25,7 +25,7 @@
     text-transform: uppercase;
     font: 37px/#{$subHeaderHeight} $BebasNeue;
 
-    .-device_mobile & {
+    .l-html.-device_mobile & {
       float: none;
       padding-right: 20px;
       padding-left: 20px;

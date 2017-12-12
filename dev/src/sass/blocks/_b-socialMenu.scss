@@ -1,6 +1,6 @@
 /**
-* @section socialMenu
-*/
+ * @section socialMenu
+ */
 .b-socialMenu {
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@
     margin: 0 0 0 34px;
     height: 100%;
 
-    .-device_mobile & {
+    .l-html.-device_mobile & {
       display: none;
     }
 
@@ -33,6 +33,7 @@
       }
     }
   }
+
   &.-style_sidebar {
     .b-socialMenu__item {
       margin: 0 0 0 12px;
@@ -74,9 +75,11 @@
     &.-type_fb {
       @extend .fa-facebook;
     }
+
     &.-type_twitter {
       @extend .fa-twitter;
     }
+
     &.-type_github {
       @extend .fa-github;
     }

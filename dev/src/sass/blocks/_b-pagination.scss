@@ -1,15 +1,22 @@
 /**
-* @section pagination
-*/
+ * @section pagination
+ */
 .b-pagination {
-  &__total {}
-  &__pages {}
+  &__total {
+
+  }
+
+  &__pages {
+
+  }
+
   &__list {
     margin: 0;
     padding: 0;
     list-style: none;
     text-align: center;
   }
+
   &__item {
     display: inline-block;
     background: #fff;
@@ -17,6 +24,7 @@
     text-align: center;
     font: 18px/30px $BebasNeue;
   }
+
   &__link {
     display: block;
     width: 30px;
