@@ -26,12 +26,15 @@
     "grunt-spritesmith": "6.6.2",
     "jshint-stylish": "2.2.1",
     "load-grunt-config": "1.0.1",
-    "node-sass": "^4.11.0",
+    "node-sass": "4.11.0",
     "pixrem": "5.0.0",
     "time-grunt": "2.0.0"
   },
   "dependencies": {},
-  "scripts": {},
+  "scripts": {
+    "start-dev": "call grunt dev && call grunt concurrent:dev",
+    "start": "call grunt && call grunt concurrent:main"
+  },
   "author": {
     "name": "iDeus",
     "url": "https://github.com/ideus-team/html-framework"
